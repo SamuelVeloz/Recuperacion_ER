@@ -11,9 +11,9 @@ function getApi(){
     fetch(URL) 
     .then(response => response.json())
     .then(data =>  {
-        username.textContent = data[0].name;
+		username.textContent = "NAME:"+ "" + data [0].name;
         imgcard.src = data[0].image;
-        birth.textContent = data[0].dateOfBirth;
-        genderOf.textContent = data[0].gender;
+        birth.textContent = "AGE:"+ "" + data[0].dateOfBirth;
+        genderOf.textContent = "GENDER:"+ "" + data[0].gender;
     })
 }
